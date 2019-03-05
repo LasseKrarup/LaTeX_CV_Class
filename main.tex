@@ -1,0 +1,104 @@
+\documentclass%
+    [%
+        name={Lasse Krarup}, %
+        phone={+45 1234 5678},%
+        linkedin,%
+        github=LasseKrarup, mail=lasseheroldkrarup@gmail.com,%
+        address={Streetname, City, 12345}%
+    ]{customCV}
+
+% #################################################################################################################
+% =================== SEE THE GITHUB README FOR MORE INFORMATION ABOUT THE USE OF THIS CLASS ======================
+% #################################################################################################################
+
+% Valid options are:
+% name={<NAME>}                 Name of the subject
+% phone={<PHONE NUMBER>}        Phone number
+% linkedin                      If options is parsed, place a linkedin symbol WITHOUT hyperref in header
+% linkedinlink={<LINKEDIN URL>} Use this option to link to linkedin using hyperref. Use only one of the linkedin options or they will conflict
+% github={<GITHUB USERNAME>}    If option is parsed, place a GitHub symbol in header
+% address={<FULL ADDRESS>}      Full address of the subject, including city and postal code
+% mail={<EMAIL ADDRESS}         E-mail address of the subject
+
+% This class uses XeTeX for the fonts. This means no \usepackage[utf8]{inputenc}
+% Remember to use XeTeX for compilation
+
+% CV items should be placed inside a cvtab environment
+% \cvpoint
+%   {From}
+%   {To}
+%   {Title}
+%   {Place of work or education}
+%   {Description}
+
+\hyphenation{% Add hyphenation in your native language like this
+    Af-slut-ning
+    Sommer-kurser
+}
+
+\usepackage{parskip} %Remove par indentation
+
+\begin{document}
+
+\maketitle %Print the title using the options given to the documentclass in the top of this document
+\setlength{\parskip}{0.25cm} %Add space after paragraphs
+
+\makepicture{example-image-a} %Add a picture to the CV
+
+\section[icon=graduation-cap]{Uddannelse}
+
+\begin{cvtab}
+    \cvpoint{aug. 2017}{jan. 2021}{Diplomingeniør}{Aarhus Universitet}{Diplomingeniør i elektronik ved Aarhus Universitet med forventet afslutning i 2021}\\
+    \cvpoint{aug. 2011}{jun. 2014}{Gymnasieeksamen}{Aarhus Katedralskole}{Musik A, Matematik A, Fysik A}
+\end{cvtab}
+
+\section[icon=industry]{Erhvervserfaring}
+
+\begin{cvtab}
+    \cvpoint{jul. 2015}{nu}{Aktivitetskoordinator}{Nørgaards Højskole}{Ansvar for aktivitetskoordination og kursusafvikling for årlige sommerkurser}\\
+    \cvpoint{mar. 2017}{nu}{Tjener og bartender}{Hantwerk}{Tjener og bartender på restaurant/bryggeri Hantwerk i Aarhus}\\
+    \cvpoint{aug. 2016}{apr. 2018}{Handicapaflaster}{Aarhus Kommune}{Aflastning for handicappede i eget hjem gennem Handicapcentret for Børn, Aarhus Kommune}\\
+    \cvpoint{aug. 2011}{aug. 2016}{Presseskribent}{KompetenceKanalen A/S}{Skribent af pressetekster med henblik på søgemaskineoptimering (SEO) for virksomheder af alle størrelser}\\
+    \cvpoint{aug. 2014}{jan. 2015}{Servicemedarbejder}{Bech-Bruun}{Servicearbejde samt behandling og håndtering af dokumenter}
+\end{cvtab}
+
+\section[icon=code]{Softwarekompetencer}
+
+\begin{cvtab}
+    & \textbf{C, C++}\newline Indgående kendskab og erfaring igennem studie og hobbyprojekter\\
+    & \textbf{JavaScript} \textit{samt Node.js}\newline Erfaring med webapps i forbindelse med flere hobbyprojekter samt udvikling af desktop apps med Node.js og Electron i forbindelse med studie\\
+    & \textbf{C\#} \newline Erfaring med simple applikationer, herunder TCP-sockets, i forbindelse med studie\\
+    & \textbf{HTML, CSS} \textit{samt Sass, Bootstrap}\newline Indgående kendskab til markup af hjemmeside i HTML og CSS på baggrund af mange års hobbyprojekter og studiebrug (desktop apps med Node.js og Electron). Derudover erfaring med CSS-preprocessors (primært Sass) og Bootstrap framework
+\end{cvtab}
+
+\section[icon=wrench]{Værktøjer og teknologier}
+
+\begin{cvtab}
+    & \textbf{Git} \newline Indgående kendskab og erfaring igennem studie og hobbyprojekter\\
+    & \textbf{\LaTeX}\newline Indgående kendskab og meget erfaring med udarbejdelse af diverse former for dokumenter i \LaTeX\\
+    & \textbf{UML, SysML}\newline Erfaring med UML og SysML i forbindelse med modellering af software- og hardwareprojekter på studie
+\end{cvtab}
+
+\section[icon=group]{Frivilligt arbejde}
+
+\begin{cvtab}
+    \cvpoint{feb. 2019}{nu}{Formand, bestyrelse}{RUS-1 Katrinebjerg}{Formand for bestyrelsen af foreningen RUS-1 Katrinebjerg, der er tutor-foreningen ved Aarhus School of Engineering, Katrinebjerg}\\
+    %
+    \cvpoint{sep. 2017}{nu}{Tutor}{RUS-1 Katrinebjerg}{Vejledning af nye studerende samt aktivitetskoordination}\\
+    %
+    \cvpoint{okt. 2017}{nu}{Formand, bestyrelse}{Nørgaards Højskoles Elevforening}{Formand for elevforeningen på Nørgaards Højskole med opgaver som planlægning og organisering af elevtræf samt varetage båndet mellem nuværende og tidligere elever. Derudover indebærer arbejdet også mødeledelse og administration}\\
+    %
+    \cvpoint{okt. 2015}{nu}{Bestyrelsesmedlem}{Nørgaards Højskoles Elevforening}{Medlem af bestyrelsen for Nørgaards Højskoles Elevforening}
+\end{cvtab}
+
+\section[icon=globe]{Sprogkundskaber}
+
+\begin{cvtab}
+     & \textbf{Dansk}\newline Modersmål\\
+     & \textbf{Engelsk}\newline Flydende\\
+     & \textbf{Tysk}\newline Flydende i daglig tale
+\end{cvtab}
+
+\section[icon=gamepad]{Personligt}
+
+\end{document}
