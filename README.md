@@ -18,12 +18,13 @@ Overleaf from the project settings menu.
 ## Class options
 
 The allowed options for the document class are as follows.
-| Option               |   Description
+
+| Option               |   Description              |
 | --------------------	| ----------------------    |
 | `name={<NAME>}` 	    |	Name of the subject 	|
 | `phone={<PHONE NUMBER>}` |        Phone number |
 |   `linkedin`            |   If options is parsed, place a linkedin symbol WITHOUT hyperref in header |
- `linkedinlink={<LINKEDIN URL>}`| Use this option to link to linkedin using hyperref. Use only one of the linkedin options or they will conflict | 
+| `linkedinlink={<LINKEDIN URL>}`| Use this option to link to linkedin using hyperref. Use only one of the linkedin options or they will conflict | 
 |`github={<GITHUB USERNAME>}` |    If option is parsed, place a GitHub symbol in header |
 | `address={<FULL ADDRESS>}`|      Full address of the subject, including city and postal code| 
 | `mail={<EMAIL ADDRESS}`  | E-mail address of the subject |
